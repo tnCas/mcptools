@@ -1,15 +1,24 @@
 # mcptools
 
-An R-based Model Context Protocol (MCP) server for automated data cleaning and analysis.
+[![License: MIT](https://img.shields.io/badge/License-OpenSource-yellow.svg)](https://opensource.org/licenses/MIT)
+[![R-project](https://img.shields.io/badge/Language-R-%23276DC3.svg)](https://www.r-project.org/)
+
+An R-based Model Context Protocol (MCP) server for automated data cleaning and statistical analysis. This package enables AI agents to interact directly with your local R environment.
 
 ## Features
-* **Median Imputation**: Automatically fills missing values in numeric columns.
-* **Outlier Detection**: Uses the $1.5 \times IQR$ rule to identify anomalies.
-* **Correlation**: Calculates Pearson correlation coefficients.
+
+*   **Median Imputation**: Automatically fills missing values in numeric columns using the median.
+*   **Outlier Detection**: Identifies statistical anomalies using the $1.5 \times IQR$ rule.
+*   **Correlation Analysis**: Calculates Pearson correlation coefficients between numeric variables.
+
+---
 
 ## Installation
+
+Install the package directly from GitHub using the `remotes` package:
 ```R
-remotes::install_github("your-username/mcptools").
+# If remotes is not installed: install.packages("remotes")
+remotes::install_github("[YOUR_GITHUB_USERNAME]/mcptools")
 
 ## Configuration for AI Clients 
 This server communicates via the standard stdio (standard input/output) interface. Any AI agent or IDE that supports the Model Context Protocol (MCP) can connect to these tools.
