@@ -1,0 +1,11 @@
+Package: mcptools
+Title: Model Context Protocol Tools for R
+Version: 0.1.0
+Authors@R: person("User", "Name", role = c("aut", "cre"), email = "email@example.com")
+Description: Statistical tools for MCP servers including median imputation, 
+    IQR outlier detection, and correlation analysis.
+License: MIT
+Encoding: UTF-8
+Imports: 
+    mcp,
+    stats
